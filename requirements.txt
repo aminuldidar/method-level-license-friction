@@ -1,0 +1,16 @@
+# Replication package requirements
+#
+# statsmodels >= 0.13 is a hard requirement: the truncation analysis in
+# h1a_truncation_robustness.ipynb uses TruncatedLFNegativeBinomialP and
+# TruncatedLFPoisson, which earlier versions do not provide.
+#
+# Pin exact versions with `pip freeze` before archiving if you want
+# bit-identical reproduction; the ranges below are what the analysis was
+# developed and verified against.
+
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+statsmodels>=0.13
+matplotlib>=3.7
+jupyter>=1.0

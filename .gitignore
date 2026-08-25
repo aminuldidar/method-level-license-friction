@@ -1,0 +1,50 @@
+# ---------------------------------------------------------------- data
+# The processed corpus is ~500 MB, well over GitHub's 100 MB per-file limit.
+# It is distributed via Zenodo (DOI in the README) alongside this repository.
+#
+# IMPORTANT: this must be in place BEFORE the first commit. A large file that
+# is committed and later deleted remains in git history and permanently bloats
+# the repository; removing it afterwards requires rewriting history.
+data/*.csv
+data/*.csv.gz
+data/*.parquet
+
+# Keep the code dependency that lives in data/
+!data/DSR_engine.py
+
+# ------------------------------------------------------- generated output
+# Everything here is regenerable by running the notebooks. Committing it
+# invites drift between the code and the checked-in results.
+results/*.csv
+figures/*.png
+figures/*.pdf
+
+# Keep the folders present in a fresh clone
+!results/.gitkeep
+!figures/.gitkeep
+
+# ------------------------------------------------------------- notebooks
+# Backups from the path migration
+*.ipynb.bak
+_old_root_csvs/
+
+# ------------------------------------------------------------ housekeeping
+# One-off tooling, not part of the artifact
+audit_notebooks.py
+repath_notebooks.py
+notebook_audit_report.txt
+REPLICATION_MANIFEST.md
+
+# Superseded scripts kept locally for provenance only
+h5_corrected_pipeline.py
+h5_diagnostic.py
+classify_license_dict_lookup.py
+
+# ----------------------------------------------------------------- python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+.DS_Store
