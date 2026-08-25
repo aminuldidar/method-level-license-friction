@@ -1,0 +1,7 @@
+age spec,model,coef,SE,IRR,p,alpha,sig@.05
+age_std,Ordinary NB (raw y),0.0462,0.0212,1.0473,0.02938,0.2598,True
+age_std,NB on y-1 (shifted),0.1587,0.0499,1.172,0.001459,2.9877,True
+age_std,Zero-truncated Poisson,0.0473,0.0226,1.0485,0.03644,n/a,True
+log_age,Ordinary NB (raw y),0.0199,0.0209,1.0201,0.3402,0.2477,False
+log_age,NB on y-1 (shifted),0.0993,0.0492,1.1044,0.04361,2.8941,True
+log_age,Zero-truncated Poisson,0.0632,0.0222,1.0653,0.004408,n/a,True
