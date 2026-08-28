@@ -15,9 +15,7 @@ data/*.parquet
 # ------------------------------------------------------- generated output
 # Everything here is regenerable by running the notebooks. Committing it
 # invites drift between the code and the checked-in results.
-results/*.csv
-figures/*.png
-figures/*.pdf
+
 
 # Keep the folders present in a fresh clone
 !results/.gitkeep
@@ -48,3 +46,4 @@ __pycache__/
 venv/
 env/
 .DS_Store
+data/searchseco_batch_miner.py
