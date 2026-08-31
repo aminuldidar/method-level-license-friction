@@ -101,6 +101,14 @@ Reproduces: N = 10,337 projects (8,407 for the density measure); Gini = 0.9604
 resolved provenance carry zero actionable debt. Writes
 `figures/h2_lorenz_curves.png`.
 
+Also writes `results/h2_top10_category4_projects.csv`, the ten
+highest-volume Category 4 projects, supporting the outlier-sensitivity
+check in the paper's Threats to Validity. These ten account for 46% of
+all 17,147 Category 4 instances, with no single project exceeding 9% —
+so the Category 4 Gini (0.992) is sensitive to a handful of large
+contributors, while the combined (0.960) and density-normalised (0.740)
+measures are not.
+
 ### `h3_license_family_analysis` — H3
 License family against violation subtype, restricted to Category 3. Category 4
 is excluded because every Category 4 row carries an unresolved origin license,
@@ -235,6 +243,22 @@ analysis should be written.
 6. **About 3.9% of URLs** do not match the canonical `github.com/org/repo`
    pattern (enterprise hosts, gists, unusual paths) and are dropped where
    project-identity resolution is required. The H1 notebook reports this count.
+
+### Generated results
+
+`results/` holds every CSV the notebooks produce. Most correspond
+directly to a table or figure in the paper; two are supporting
+material:
+
+| File | Contents |
+|---|---|
+| `h2_top10_category4_projects.csv` | The ten projects with the most Category 4 (Structural/High Risk) instances, with each project's share of the 17,147 total. Supports the outlier-sensitivity discussion in Threats to Validity. |
+| `h5_org_level_rates.csv` | Per-organization friction rate and relationship count for the 52 organizations retained in H5's clustering robustness check. |
+
+Both are inputs to claims in the paper rather than headline results, and are included so those claims can be checked directly.
+
+Note that the highest-volume Category 4 projects are predominantly large corporate repositories. This is consistent with H5: Corporate
+repositories contribute high absolute instance counts by virtue of size while showing the lowest friction *rate* of the three cohorts.
 
 ---
 
