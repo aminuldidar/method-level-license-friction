@@ -25,13 +25,16 @@ data/*.parquet
 # Backups from the path migration
 *.ipynb.bak
 _old_root_csvs/
-
+prev_papers
 # ------------------------------------------------------------ housekeeping
 # One-off tooling, not part of the artifact
 audit_notebooks.py
 repath_notebooks.py
 notebook_audit_report.txt
 REPLICATION_MANIFEST.md
+bibliography.bib
+Ecosystem_Exploration.tex
+CLAUDE.md
 
 # Superseded scripts kept locally for provenance only
 h5_corrected_pipeline.py
@@ -47,3 +50,4 @@ venv/
 env/
 .DS_Store
 data/searchseco_batch_miner.py
+.gitignore

@@ -1,5 +1,5 @@
 age spec,model,coef,p,baseline E[y],AME (counts),AME (% of baseline),AME 95% CI
 age_std,Ordinary NB,0.0462,0.02938,1.88,0.089,4.73,n/a
-age_std,Zero-truncated NB,0.1893,0.0001805,2.783,0.3197,11.49,n/a
+age_std,Zero-truncated NB,0.1892,0.0001833,2.782,0.3196,11.49,n/a
 log_age,Ordinary NB,0.0199,0.3402,1.89,0.038,2.01,n/a
-log_age,Zero-truncated NB,0.1149,0.02233,1.844,0.0879,4.76,n/a
+log_age,Zero-truncated NB,0.1149,0.02256,1.844,0.0878,4.76,n/a
