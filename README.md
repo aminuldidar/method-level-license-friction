@@ -97,7 +97,7 @@ Concentration of compliance debt across projects, by Gini and Lorenz curve,
 with bootstrap confidence intervals.
 
 Reproduces: N = 10,337 projects (8,407 for the density measure); Gini = 0.9604
-(actionable debt) and 0.7404 (density-normalised); 57.8% of projects with
+(actionable debt) and 0.7404 (density-normalised); 57.7% of projects with
 resolved provenance carry zero actionable debt. Writes
 `figures/h2_lorenz_curves.png`.
 
