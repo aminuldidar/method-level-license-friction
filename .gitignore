@@ -38,8 +38,8 @@ CLAUDE.md
 ICSE_SEIP_conference_info.txt
 supplementary_validation_v1.docx
 supplementary_validation_2.docx
-suppliments/supplementary_validation_extracted.txt
-suppliments/supplementary_validation_2_extracted.txt
+supplements/supplementary_validation_extracted.txt
+supplements/supplementary_validation_2_extracted.txt
 
 # Superseded scripts kept locally for provenance only
 h5_corrected_pipeline.py

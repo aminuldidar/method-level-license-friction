@@ -284,7 +284,7 @@ Study Design section.
 
 Please cite the paper. See the accompanying supplementary documents for the
 methodological justification of each statistical choice
-(`supplementary_validation.docx`) and for step-by-step derivations of every
+(`supplements/supplementary_validation_v1.pdf`) and for step-by-step derivations of every
 reported statistic (`supplementary_validation_2.docx`).
 
 ---
